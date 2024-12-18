@@ -1,0 +1,230 @@
+/* Global Header Styling */
+.global-header {
+    background-color: #444;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  .global-header h1 {
+    margin-bottom: 0.5rem;
+  }
+  .global-header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  .global-header nav ul li {
+    margin: 0 1rem;
+  }
+  .global-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .global-header nav ul li a:hover {
+    color: #00bcd4;
+  }
+  .global-header nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #00bcd4;
+  }
+  
+  /* General Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .hero p {
+    margin: 1rem 0;
+  }
+  .hero .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 1rem 0;
+  }
+  .hero .btn {
+    display: inline-block;
+    background: #00bcd4;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .hero .btn:hover {
+    background-color: #0097a7;
+  }
+  
+  /* About Section */
+  .about, .skills, .projects, .contact {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Skills Section */
+  .skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Allows the grid to adjust for smaller screens */
+  }
+  .skill {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 200px;
+    text-align: left;
+  }
+  .skill h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Projects Section */
+  .projects .project-card {
+    background: #fff;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Limits the width of the project cards */
+  }
+  .projects .project-card h3 {
+    margin-bottom: 1rem;
+  }
+  .projects .project-card a {
+    display: inline-block;
+    background: #00bcd4;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .projects .project-card a:hover {
+    background-color: #0097a7;
+  }
+  
+  /* Contact Section */
+  .contact form input,
+  .contact form textarea,
+  .contact form button {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  .contact form button {
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .contact form button:hover {
+    background-color: #0097a7;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  .footer a {
+    color: #00bcd4;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .global-header nav ul {
+        flex-direction: column;
+    }
+    .skills-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .skill {
+        width: 100%;
+    }
+    .projects .project-card {
+        width: 100%;
+    }
+  }
+  /* Contact Section */
+  .contact {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column; /* Aligns the form elements vertically */
+    align-items: center; /* Center-aligns the form fields */
+    width: 100%;
+    max-width: 500px; /* Limits the width of the form */
+    margin: 0 auto; /* Centers the form horizontally */
+  }
+  
+  .contact form input,
+  .contact form textarea,
+  .contact form button {
+    width: 100%; /* Makes all form elements take full width */
+    margin: 0.5rem 0; /* Adds space between form elements */
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .contact form button {
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact form button:hover {
+    background-color: #0097a7;
+  }
+  
+  .contact .social-links a {
+    margin: 0.5rem;
+    color: #00bcd4;
+    text-decoration: none;
+  }
+  
+  .contact .social-links a:hover {
+    text-decoration: underline;
+  }
+  
